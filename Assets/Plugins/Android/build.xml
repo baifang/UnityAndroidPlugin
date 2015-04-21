@@ -88,5 +88,9 @@
     -->
     <!-- version-tag: 1 -->
     <import file="${sdk.dir}/tools/ant/build.xml" />
-
+    <target name="jar" depends="debug">
+        <jar
+            destfile="bin/androidPlugin.jar"
+            basedir="bin/classes" />
+    </target>
 </project>
